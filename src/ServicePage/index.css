@@ -1,0 +1,37 @@
+.ServicePage {
+  padding-top: 32px;
+}
+
+.ServicePage .FieldsEditor {
+  width: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.ServicePage .FieldsEditor label {
+  font-size: 11px;
+  user-select: none;
+  transition: .15s ease-out;
+}
+
+.ServicePage .FieldsEditor.pending label {
+  color: grey;
+}
+
+.ServicePage .FieldsEditor input,
+.ServicePage .FieldsEditor textarea {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.ServicePage .FieldsEditor .save-button {
+  margin-left: 16px;
+}
+
+.ServicePage .FieldsEditor .error-message {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 10px;
+}

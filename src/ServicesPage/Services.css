@@ -1,0 +1,50 @@
+.Services {
+  display: inline-block;
+  border: 1px solid #272727;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.Services .service-entry {
+  display: grid;
+  grid-template-areas: "name price controls";
+  grid-template-columns: 3fr 1fr auto;
+  align-items: center;
+  gap: 10px;
+  width: 350px;
+  margin: auto;
+  padding: 4px;
+  transition: .15s ease-out;
+}
+
+.Services .service-entry.pending {
+  color: grey;
+}
+
+.Services .service-entry:not(:last-child) {
+  border-bottom: 1px solid #171717;
+}
+
+.Services .service-entry:hover {
+  background-color: #171717;
+}
+
+.Services .service-entry .name {
+	grid-area: name;
+  text-align: start;
+  margin-left: 5px;
+}
+
+.Services .service-entry .price {
+	grid-area: price;
+  text-align: end;
+}
+
+.Services .service-entry .controls {
+  grid-area: controls;
+  display: flex;
+}
+
+.Services .service-entry .controls button {
+  margin: 2px;
+}
